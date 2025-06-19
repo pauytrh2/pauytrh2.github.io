@@ -53,6 +53,32 @@
     .acronym:not(:has(.letter:hover)) .letter {
       filter: none;
     }
+
+    .letter::before,
+    .letter::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: black;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .letter::before {
+      top: -10px;
+    }
+
+    .letter::after {
+      bottom: -10px;
+    }
+
+    .letter:hover::before,
+    .letter:hover::after {
+      opacity: 1;
+    }
   </style>
 </head>
 <body>
