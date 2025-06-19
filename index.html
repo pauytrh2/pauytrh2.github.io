@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pauytrh</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PAUYTRH Acronym</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .acronym {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .letter {
+      position: relative;
+      font-size: 70px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      transition: filter 0.3s ease;
+    }
+
+    .meaning {
+      font-size: 40px;
+      font-weight: normal;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .acronym:hover .letter {
+      filter: blur(2px);
+    }
+
+    .acronym .letter:hover {
+      filter: none;
+    }
+
+    .letter:hover .meaning {
+      opacity: 1;
+    }
+
+    .acronym:not(:has(.letter:hover)) .letter {
+      filter: none;
+    }
+  </style>
 </head>
 <body>
-    <p>
-        Hello, world!
-    </p>
+
+  <div class="acronym">
+    <div class="letter">P <span class="meaning">ride</span></div>
+    <div class="letter">A <span class="meaning">cceptance</span></div>
+    <div class="letter">U <span class="meaning">nity</span></div>
+    <div class="letter">Y <span class="meaning">outh</span></div>
+    <div class="letter">T <span class="meaning">olerance</span></div>
+    <div class="letter">R <span class="meaning">espect</span></div>
+    <div class="letter">H <span class="meaning">onesty</span></div>
+  </div>
+
 </body>
 </html>
