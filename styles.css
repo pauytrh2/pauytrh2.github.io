@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    color-scheme: dark;
+    background-color: #111111;
+
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+}
+
+.right,
+.left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    margin-left: 10vw;
+    justify-content: center;
+}
+
+.right {
+    margin-right: 10vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.right > div {
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+img {
+    width: 25vw;
+    border-radius: 100%;
+}
+
+h1 {
+    font-family: "Modak";
+    font-weight: lighter;
+    font-size: 4em;
+    margin: 0;
+    color: white;
+}
+
+h2 {
+    font-family: "Open Sans";
+    font-weight: lighter;
+    font-size: 1.5em;
+    margin-top: .1em;
+    color: white;
+}
+
+a, p {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-size: 1em;
+    margin: .05em;
+    color: white;
+}
