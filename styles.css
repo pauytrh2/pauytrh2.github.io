@@ -38,9 +38,9 @@ body {
     gap: 0.5em;
 }
 
-img {
+.left>img {
     width: 25vw;
-    border-radius: 100%;
+    border-radius: 30%;
 }
 
 h1 {
